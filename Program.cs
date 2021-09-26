@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataStructuresAndAlgorithms.AlgorithmProgram;
+using System;
 
 namespace DataStructuresAndAlgorithms
 {
@@ -6,7 +7,13 @@ namespace DataStructuresAndAlgorithms
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("-----------------------------------------------------------------");
             Console.WriteLine("Welcome to Data Structures & Algorithms Programminng");
+            Console.WriteLine("-----------------------------------------------------------------");
+            //*************************************************************************************
+            AlgorithmsProgramming algorithmsProgramming = new AlgorithmsProgramming();
+            algorithmsProgramming.algoProgram();
+            //*************************************************************************************
         }
     }
 }
