@@ -32,6 +32,15 @@ namespace DataStructuresAndAlgorithms.AlgorithmProgram
             else
                 Console.WriteLine("Element not present");
             Console.WriteLine("\n***************************************************************************\n");
+            Console.WriteLine("--------------BinarySearch--------------");
+            Console.WriteLine("Enter array of string to be sorted");
+            string[] insertionArr = Console.ReadLine().Split(", ");
+            algoProbFunctioons.insertionSort(insertionArr);
+            foreach (string i in insertionArr)
+            {
+                Console.Write(i + " ");
+            }
+            Console.WriteLine("\n***************************************************************************\n");
         }
     }
 }
