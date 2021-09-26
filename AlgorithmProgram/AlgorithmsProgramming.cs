@@ -11,13 +11,26 @@ namespace DataStructuresAndAlgorithms.AlgorithmProgram
         /// </summary>
         public void algoProgram()
         {
+            AlgoProbFunctioons algoProbFunctioons = new AlgoProbFunctioons();
             Console.WriteLine("***************************************************************************\n");
+            Console.WriteLine("---------------Permutation--------------");
             Console.WriteLine("Entter a string to find the permutation");
             string str =  Console.ReadLine();
             //Constructor is called to create an object
-            PermutationOfString permutation = new PermutationOfString();
             Console.Write("\nAll possible permutation strings are : ");
-            permutation.permute(str, "");
+            algoProbFunctioons.permutationOfString(str, "");
+            Console.WriteLine("\n***************************************************************************\n");
+            Console.WriteLine("--------------BinarySearch--------------");
+            Console.WriteLine("Enter array of string");
+            string[] arr = Console.ReadLine().Split(", ");
+            Console.WriteLine("Enter a word that need to be find");
+            string word = Console.ReadLine();
+            Array.Sort(arr);
+            bool result = algoProbFunctioons.binarySearch(arr, word);
+            if (result == true)
+                Console.WriteLine("Element present");
+            else
+                Console.WriteLine("Element not present");
             Console.WriteLine("\n***************************************************************************\n");
         }
     }
