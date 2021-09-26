@@ -57,6 +57,17 @@ namespace DataStructuresAndAlgorithms.AlgorithmProgram
             Console.WriteLine("Sorted array");
             bubbleSortAlgo.printArray(intArr, n);
             Console.WriteLine("\n***************************************************************************\n");
+            Console.WriteLine("--------------MergeSort--------------");
+            MergeSortAlgo mergeSortAlgo = new MergeSortAlgo();
+            string[] mergeSortArray = { "foo", "bar", "alice", "bob", "celine", "david" };
+            mergeSortAlgo.mergeSort(mergeSortArray, 0, mergeSortArray.Length - 1);
+            Console.WriteLine("Sorted array");
+            foreach (string i in mergeSortArray)
+            {
+                Console.Write(i + " ");
+            }
+            Console.WriteLine();
+            Console.WriteLine("\n***************************************************************************\n");
         }
     }
 }
