@@ -12,7 +12,6 @@ namespace DataStructuresAndAlgorithms.AlgorithmProgram
         public void algoProgram()
         {
             AlgoProbFunctioons algoProbFunctions = new AlgoProbFunctioons();
-            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             Console.WriteLine("***************************************************************************\n");
             Console.WriteLine("---------------Permutation--------------");
             Console.WriteLine("Entter a string to find the permutation");
@@ -20,7 +19,6 @@ namespace DataStructuresAndAlgorithms.AlgorithmProgram
             //Constructor is called to create an object
             Console.Write("\nAll possible permutation strings are : ");
             algoProbFunctions.permutationOfString(str, "");
-            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             Console.WriteLine("\n***************************************************************************\n");
             Console.WriteLine("--------------BinarySearch--------------");
             Console.WriteLine("Enter array of string");
@@ -35,7 +33,6 @@ namespace DataStructuresAndAlgorithms.AlgorithmProgram
                 Console.WriteLine("Element present");
             else
                 Console.WriteLine("Element not present");
-            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             Console.WriteLine("\n***************************************************************************\n");
             Console.WriteLine("--------------BinarySearch--------------");
             Console.WriteLine("Enter array of string to be sorted");
@@ -47,7 +44,6 @@ namespace DataStructuresAndAlgorithms.AlgorithmProgram
                 Console.Write(i + " ");
             }
             Console.WriteLine();
-            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             Console.WriteLine("\n***************************************************************************\n");
             Console.WriteLine("--------------BubbleSort--------------");
             BubbleSortAlgo bubbleSortAlgo = new BubbleSortAlgo();
@@ -67,6 +63,14 @@ namespace DataStructuresAndAlgorithms.AlgorithmProgram
                 Console.Write(i + " ");
             }
             Console.WriteLine();
+            Console.WriteLine("\n***************************************************************************\n");
+            Console.WriteLine("--------------StringAnagrams--------------");
+            Console.WriteLine("Enter the first string");
+            string anagramStr1 = Console.ReadLine();
+            Console.WriteLine("Enter the second string");
+            string anagramStr2 = Console.ReadLine();
+            string resultOfAnagram = AnagramsString.toCheckAnagrams(anagramStr1, anagramStr2);
+            Console.WriteLine("Given two strings are " + resultOfAnagram);
             Console.WriteLine("\n***************************************************************************\n");
         }
     }
