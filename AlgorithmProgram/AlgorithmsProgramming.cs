@@ -72,6 +72,9 @@ namespace DataStructuresAndAlgorithms.AlgorithmProgram
             string resultOfAnagram = AnagramsString.toCheckAnagrams(anagramStr1, anagramStr2);
             Console.WriteLine("Given two strings are " + resultOfAnagram);
             Console.WriteLine("\n***************************************************************************\n");
+            Console.WriteLine("--------------PrimeNumberBetweenRange--------------");
+            PrimeNumBetweenRange.primeNums();
+            Console.WriteLine("\n***************************************************************************\n");
         }
     }
 }
