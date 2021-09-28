@@ -76,6 +76,12 @@ namespace DataStructuresAndAlgorithms.AlgorithmProgram
             Console.WriteLine("--------------PrimeNumberBetweenRange--------------");
             PrimeNumBetweenRange.primeNums();
             Console.WriteLine("\n***************************************************************************\n");
+            Console.WriteLine("Enter a number N");
+            int N = Convert.ToInt32(Console.ReadLine());
+            int m = 0;
+            Console.WriteLine("Ask to user to think a number between 0 to " + N);
+            FindYourGuesNum.guessNumber(N, m);
+            Console.WriteLine("\n***************************************************************************\n");
         }
     }
 }
