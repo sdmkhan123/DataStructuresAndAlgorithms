@@ -14,7 +14,7 @@ namespace DataStructuresAndAlgorithms.AlgorithmProgram
             AlgoProbFunctioons algoProbFunctions = new AlgoProbFunctioons();
             Console.WriteLine("***************************************************************************\n");
             Console.WriteLine("---------------Permutation--------------");
-            Console.WriteLine("Entter a string to find the permutation");
+            Console.WriteLine("Enter a string to find the permutation");
             string str =  Console.ReadLine();
             //Constructor is called to create an object
             Console.Write("\nAll possible permutation strings are : ");
@@ -69,7 +69,8 @@ namespace DataStructuresAndAlgorithms.AlgorithmProgram
             string anagramStr1 = Console.ReadLine();
             Console.WriteLine("Enter the second string");
             string anagramStr2 = Console.ReadLine();
-            string resultOfAnagram = AnagramsString.toCheckAnagrams(anagramStr1, anagramStr2);
+            AnagramsString anagramsString = new AnagramsString();
+            string resultOfAnagram = anagramsString.toCheckAnagrams(anagramStr1, anagramStr2);
             Console.WriteLine("Given two strings are " + resultOfAnagram);
             Console.WriteLine("\n***************************************************************************\n");
             Console.WriteLine("--------------PrimeNumberBetweenRange--------------");
