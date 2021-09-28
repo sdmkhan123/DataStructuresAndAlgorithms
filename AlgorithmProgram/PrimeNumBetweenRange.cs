@@ -6,6 +6,23 @@ namespace DataStructuresAndAlgorithms.AlgorithmProgram
 {
     public class PrimeNumBetweenRange
     {
+        private static bool isPalindrome(int num)
+        {
+            int rem = 0;
+            int sum = 0;
+            int tempNum = num;
+            while (num > 0)
+            {
+                rem = num % 10;
+                num = num / 10;
+                sum = sum * 10 + rem;
+            }
+            if(sum == tempNum)
+            {
+                return true;
+            }
+            return false;
+        }
         public static void primeNums()
         {
             int flag;
@@ -28,7 +45,11 @@ namespace DataStructuresAndAlgorithms.AlgorithmProgram
                 }
                 if (flag == 1)
                 {
-                    Console.Write(i + " ");
+                    bool panlindromeRes = isPalindrome(i);
+                    if(panlindromeRes == true)
+                    {
+                        Console.Write(i + " ");
+                    }
                 }
             }
         }
