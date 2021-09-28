@@ -66,9 +66,9 @@ namespace DataStructuresAndAlgorithms.AlgorithmProgram
             Console.WriteLine("\n***************************************************************************\n");
             Console.WriteLine("--------------StringAnagrams--------------");
             Console.WriteLine("Enter the first string");
-            string anagramStr1 = Console.ReadLine();
+            char [] anagramStr1 = Console.ReadLine().ToCharArray();
             Console.WriteLine("Enter the second string");
-            string anagramStr2 = Console.ReadLine();
+            char[] anagramStr2 = Console.ReadLine().ToCharArray();
             AnagramsString anagramsString = new AnagramsString();
             string resultOfAnagram = anagramsString.toCheckAnagrams(anagramStr1, anagramStr2);
             Console.WriteLine("Given two strings are " + resultOfAnagram);
